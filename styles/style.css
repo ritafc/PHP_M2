@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(220, 220, 221);
+    font-family: 'New Tegomin', serif;
+}
+nav{
+    background:#000;/* rgb(0, 100, 0);*/
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+nav ul li{
+    width: 150px;
+    margin: 5px;
+    padding: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li:hover{
+    background:  tomato;
+    color: #111111;
+    border-radius: 3px;
+}
+header{
+    /*he puesto este fondo de imagen  aqui pero no 
+    me funciona he tenido que poner el posicion para
+    ver si mi imagen se iba al centro */
+    background-image: url('images/fondo.jpg');
+    width: 80%;
+    margin: auto;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.redes{
+    cursor: pointer;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+/**/
+article{
+    width: 80%;
+    margin: auto;
+    padding: 25px 50px;
+}
+footer{
+    background: #111;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    color: white;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.face{
+    color: rgb(15, 119, 238);
+    padding: 1px;
+}
+.youtube{
+    color: rgb(255, 17, 17);
+    padding: 1px;
+}
+.twitter{
+    color: #25b9df;
+    padding: 1px;
+}
+.instagram{
+    color: #fff;
+    background: linear-gradient(45deg,#22046b,#e14e42);
+    padding: 1px;
+}
+aside{
+    width: 80%;
+    height: 350px;
+    background: #ccc;
+    margin: 50px auto;
+    display: flex;
+}
+.col{
+    height: 100%;
+    flex: 1;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+    transition: 0.6s;
+}
+.col:nth-child(1){
+    background: #283491;
+}
+.col:nth-child(2){
+    background: #f18684;
+}
+.col:nth-child(3){
+    background: #6ee2f1;
+}
+h3{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.caption{
+    max-width:230px;
+    font-size:12px;
+    margin:20px 0;
+    display: none;
+}
+.caption button{
+    border:1px solid #fff;
+    background: transparent;
+    outline: none;
+    padding: 8px 18px;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.col img{
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+}
+.col:hover{
+    flex-grow: 2.5;
+}
+.col:hover .caption{
+    display: block;
+}
+.col:hover h3{
+    text-align: left;
+}
